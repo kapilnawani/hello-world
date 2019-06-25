@@ -17,8 +17,9 @@ const app = express()
 const port = 3000
 
 //app.get('/', (req, res) => res.send('XGAMER'));
-app.get('/', function(req, res){
-  res.send('id: ' + req.query.id);
+app.get('/', function(req, res)
+{
+  res.send('id: ' + req.query.id+1);
 });
 app.listen(process.env.PORT || 5000);
 //app.listen(port, () => console.log(`Example app listening on port ${port}!`))
